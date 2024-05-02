@@ -7,27 +7,28 @@ fetch(apiUrl)
     .then(data => {
         console.log(data);
         console.log(data.entreprise.nomCommercial);
+        const main = document.querySelector("main");
         const header = document.createElement('header');
         let myH1 = document.createElement("h1");
         myH1.textContent = data.entreprise.nomCommercial;
-        document.body.appendChild(header);
+        main.appendChild(header);
         header.appendChild(myH1);
         //h1 header
         let myPhrase = document.createElement("p");
         myPhrase.textContent = data.entreprise.phraseAccroche;
-        document.body.appendChild(myPhrase);
+        main.appendChild(myPhrase);
         console.log(data.entreprise.phraseAccroche);
         //p
         //button
         let button = document.createElement("button");
         button.textContent = data.entreprise.texteAppelAction;
-        document.body.appendChild(button);
+        main.appendChild(button);
         console.log(data.entreprise.texteAppelAction);
         //
         console.log(data.entreprise.avantagesClients);
         //ul
         let myUl = document.createElement("ul");
-        document.body.appendChild(myUl);
+        main.appendChild(myUl);
         const Array = data.entreprise.avantagesClients;
         data.entreprise.avantagesClients.forEach(Element => {
             console.log(Element);
@@ -41,7 +42,7 @@ fetch(apiUrl)
         // Section
         let section = document.createElement("section");
         console.log(section);
-        document.body.appendChild(section);
+       main.appendChild(section);
         section.setAttribute("id", "activites");
         //Activites
         const activites = data.entreprise.activites;
@@ -52,7 +53,7 @@ fetch(apiUrl)
             //div
             const div = document.createElement("div");
             console.log(div);
-            document.body.appendChild(div);
+            main.appendChild(div);
 
             //h2
             const h2 = document.createElement("h2");
@@ -75,7 +76,7 @@ fetch(apiUrl)
 
         let temoignagesSection = document.createElement("section");
         console.log(section);
-        document.body.appendChild(temoignagesSection);
+      main.appendChild(temoignagesSection);
         temoignagesSection.setAttribute("id", "temoignages");
         //Temoignages
         const temoignages = data.entreprise.temoignages;

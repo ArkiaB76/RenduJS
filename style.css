@@ -44,29 +44,26 @@ p {
 
 header{
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     color:darkgreen;
-    background-color: blanchedalmond;
 }
 div{
     color: darkgreen;
     text-align: center;
     font-size: 20px;
     background-color: wheat;
-  
-
 }
 
 body{
-    background-color: white;
+    background-color: wheat;
     height: 100px;
     margin: 0;
 }
 
 button {
-    background-color: rgb(4, 114, 161);
-    color:black;
-    border: solid white;
+    background-color:burlywood;
+    color:darkgreen;
+    border: solid bisque;
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
@@ -75,10 +72,23 @@ button {
 /* Style pour la carte */
 #map {
     height: 300px;
-    width: 700px;
+    width: 900px;
+    border: 1px solid black;
+    min-height: 4%;
+    margin: 5px;
+    padding: 20px 0;
   }
   ul {
     margin: 0;
   }
-  
-  
+  main{
+    background-color: wheat;
+    height: 100px;
+    margin: 0;
+  }
+  footer{
+    text-align: right;
+    display: flex;
+    justify-content:center;
+    display: inline-block;
+  }
